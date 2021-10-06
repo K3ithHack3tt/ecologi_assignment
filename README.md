@@ -13,7 +13,7 @@
 ## Get Cypress tests running
 - cd to the projects home directory 'ecologi_assignment' (in a different window so that the localhost keeps running)
 - `npm ci` to get node modules and dependancies for tests
-- `npx cypress open` to open the test runner and prove everything has worked fine.
+- `npx cypress open` to open the test runner and prove everything has worked fine. (this might take a minute on first open)
 
 ## Running the tests
 The tests are situated in the ecologi_assignment/cypress/integration/ecologi_tests folder. There are 2 files which test the 2 different types of page on the blog, the homepage and the full-form blog page.
