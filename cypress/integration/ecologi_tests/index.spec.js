@@ -3,13 +3,12 @@ describe('index page', () => {
     beforeEach(() => {
         //navigate to locally hosted project URL
         cy.visit('http://localhost:3000/');
-
-    })
+    });
 
     describe('github banner', () => {
         it('should be visible and have correct URL', () => {
             //check element displays
-            cy.get('[cy-data=github-header]')
+            cy.get('[cy-data=github-header]');
             //check link displays and has expected href 
             //(would leave this out if URL changes alot as test wouldconstantly need updating)
             cy.get('[cy-data=github-header-link]').should('have.attr', 'href').and('include', 'https://github.com/vercel/next.js/tree/canary/examples/blog-starter');
@@ -29,7 +28,7 @@ describe('index page', () => {
              I would not recommend as it would make tests a bit more flakey
              I would usually just stick to the element showing in most tests
              */
-            cy.get('[cy-data=intro-block]')
+            cy.get('[cy-data=intro-block]');
             cy.get('[cy-data=intro-main-header]').contains("Blog.");
             cy.get('[cy-data=intro-sub-header]').contains("A statically generated blog example using");
             cy.get('[cy-data=intro-sub-header-url]').should('have.attr', 'href').and('include', 'https://nextjs.org/');
@@ -51,9 +50,8 @@ describe('index page', () => {
             //check url link, click the URL, ensure URL we were on matches the src URL
             //This is a bit extreme but adding it to just show what we can do
             cy.get('[cy-data=hero-post-link]').invoke('attr', 'href').then((href) => {
-                const heroBlogLink = href;
                 cy.get('[cy-data=hero-post-link]').click();
-                cy.url().should('eq', "http://localhost:3000" + heroBlogLink);
+                cy.url().should('eq', "http://localhost:3000" + href);
             });
         });
 
@@ -101,9 +99,6 @@ describe('index page', () => {
                 cy.log(postsChecked + " post previews have been checked so far");
                 postsChecked++;
             })
-
-            //TODO - add a test that clicks each of the links and ensures that they are going to the right place
-            //cy.get('[cy-dta=more-stories-block]').children().children().contains("Leaarn How to Pree-render");
         });
     });
 
@@ -117,19 +112,8 @@ describe('index page', () => {
             cy.get('[cy-data=NextJS-documentation-link]').should('have.attr', 'href').and('include', 'https://nextjs.org/docs/basic-features/pages');
         });
 
-
         it("Should have a link to the github repository", () => {
             cy.get('[cy-data=NextJS-github-link]').should('have.attr', 'href').and('include', 'https://github.com/vercel/next.js/tree/canary/examples/blog-starter');
         });
-
-
-        // it('the hero post authors details should be visible', () => {
-        //     cy.get('[cy-data=more-stories-block]').children().its('length').should('be.gte', 1);
-        //     cy.get('[cy-data=more-stories-block]').children().each(($el) => {
-        //         expect($el.html().to.contain());
-        //         // expect($el.div).to.contain("cy-data=more-stories-block");
-        //     })
-        //cy.get('[cy-data=more-stories-block]').children().children().contains("Leaarn How to Pree-render");
-        //});
     });
 });

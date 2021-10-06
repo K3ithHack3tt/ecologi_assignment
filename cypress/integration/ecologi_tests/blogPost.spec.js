@@ -6,7 +6,7 @@ describe('blog post page', () => {
         cy.get('[cy-data=hero-post-link]').click();
         //this ensures the redirect worked and we are not still on homepage
         cy.url().should('not.eq', 'http://localhost:3000/');
-    })
+    });
 
     describe("back to homepage link", () => {
         it("should display correctly and bring me to homepage on click", () => {
