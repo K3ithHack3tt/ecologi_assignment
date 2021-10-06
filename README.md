@@ -11,7 +11,7 @@
 - The blog should now be running on http://localhost:3000/
 
 ## Get Cypress tests running
-- cd to the projects home directory 'ecologi_assignment'
+- cd to the projects home directory 'ecologi_assignment' (in a different window so that the localhost keeps running)
 - `npm ci` to get node modules and dependancies for tests
 - `npx cypress open` to open the test runner and prove everything has worked fine.
 
