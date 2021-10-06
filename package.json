@@ -1,0 +1,25 @@
+{
+  "name": "ecologi_assignment",
+  "version": "1.0.0",
+  "description": "ecologi_assignment",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/K3ithHack3tt/ecologi_assignment.git"
+  },
+  "author": "Keith Hackett",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/K3ithHack3tt/ecologi_assignment/issues"
+  },
+  "homepage": "https://github.com/K3ithHack3tt/ecologi_assignment#readme",
+  "dependencies": {
+    "create-next-app": "^11.1.2"
+  },
+  "devDependencies": {
+    "cypress": "^8.5.0"
+  }
+}
