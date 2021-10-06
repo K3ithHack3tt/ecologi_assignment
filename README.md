@@ -16,7 +16,7 @@
 - `npx cypress open` to open the test runner and prove everything has worked fine.
 
 ## Running the tests
-The tests are situated in the ecologi_assignment/cypress/integration/ecologi_tests folder.
+The tests are situated in the ecologi_assignment/cypress/integration/ecologi_tests folder. There are 2 files which test the 2 different types of page on the blog, the homepage and the full-form blog page.
 They can be run in the following 2 ways..
 
 #### Cypress test runner
