@@ -2,7 +2,7 @@
 
 ## initial Setup
 - make sure you have up-to-date node running on machine.
-- clone the [github](https://github.com/K3ithHack3tt/ecologi_assignments) repo
+- clone the [github](https://github.com/K3ithHack3tt/ecologi_assignment) repo
 
 ## Get Blog running on LocalHost
 - cd to the blog-starter-app/ folder (ecologi_assignment/blog-starter-app)
