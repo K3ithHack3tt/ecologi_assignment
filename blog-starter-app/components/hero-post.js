@@ -12,7 +12,7 @@ export default function HeroPost({
   slug,
 }) {
   return (
-    <section>
+    <section cy-data='hero-post-block'>
       <div className="mb-8 md:mb-16">
         <CoverImage
           title={title}
@@ -26,15 +26,15 @@ export default function HeroPost({
         <div>
           <h3 className="mb-4 text-4xl lg:text-6xl leading-tight">
             <Link as={`/posts/${slug}`} href="/posts/[slug]">
-              <a className="hover:underline">{title}</a>
+              <a className="hover:underline" cy-data="hero-post-link"> {title}</a>
             </Link>
           </h3>
-          <div className="mb-4 md:mb-0 text-lg">
+          <div className="mb-4 md:mb-0 text-lg" cy-data="hero-post-date">
             <DateFormatter dateString={date} />
           </div>
         </div>
         <div>
-          <p className="text-lg leading-relaxed mb-4">{excerpt}</p>
+          <p className="text-lg leading-relaxed mb-4" cy-data="hero-post-excerpt">{excerpt}</p>
           <Avatar name={author.name} picture={author.picture} />
         </div>
       </div>

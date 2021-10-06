@@ -11,7 +11,7 @@ export default function Alert({ preview }) {
       })}
     >
       <Container>
-        <div className="py-2 text-center text-sm">
+        <div className="py-2 text-center text-sm" cy-data="github-header">
           {preview ? (
             <>
               This page is a preview.{' '}
@@ -29,6 +29,7 @@ export default function Alert({ preview }) {
               <a
                 href={`https://github.com/vercel/next.js/tree/canary/examples/${EXAMPLE_PATH}`}
                 className="underline hover:text-success duration-200 transition-colors"
+                cy-data="github-header-link"
               >
                 available on GitHub
               </a>
