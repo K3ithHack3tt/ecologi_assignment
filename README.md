@@ -28,3 +28,8 @@ They can be run in the following 2 ways..
 1. run `npx cypress run --spec "cypress/integration/ecologi_tests/*"` from the command line in the ecologi_assignment folder. 
 This will start running the tests headlessly in electron browser.
 
+
+## Thoughts on the project
+- It was a pretty fun challenge to get to work with nextJS for the first time.
+- I made some changes to the app itself by adding some useful data-selectors to the elements. This is best practise when working with UI testing and just helps to get to elements easier and not have long css, xpath or other paths to an element.
+- I have left my test pretty well commented (massively over-commented really :D ) so you can see some of my tought process behind what I am thinking. I also left some comments on some things I might have done better if I had more time.
